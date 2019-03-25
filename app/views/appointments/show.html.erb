@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= link_to @appointment.doctor.name, @appointment.doctor %>
+</p>
+
+<p>
+  <strong>Appointment date:</strong>
+  <%= @appointment.appointment_date %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= link_to @appointment.patient.name, @appointment.patient %>
+</p>
