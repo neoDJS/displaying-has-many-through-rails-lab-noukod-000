@@ -13,6 +13,6 @@
 <p>
   <strong>Appointments:</strong>
   <% @patient.appointments.each do |appointment| %>
-    <li><%= link_to appointment.doctor.name, appointment.doctor %> <br> <span>at <%= appointment.appointment_datetime %></span></li>
+    <li><%= link_to appointment.doctor.name, appointment.doctor %> <br> <span>at <%= appointment.appointment_date %></span></li>
   <% end %>
 </p>
